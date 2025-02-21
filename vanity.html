@@ -1,97 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Width GIF Section</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.row {
-    display: flex;
+
+.full-width-section {
+   
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: auto;
-    padding: 0 20px;
-    
-    flex-wrap: wrap; /* Allows stacking on smaller screens */
+  width: 60%;
+  overflow-y: hidden;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.column {
-
-    opacity: 2;
-    opacity:1.9;
-    background-color: Black;
-    height: 350px; /* Adjust height as needed */
-    width: 220px; /* Default width for larger screens */
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-   
-    margin: auto;
+.gif-container {
+  width: 100%;
 }
 
-.column h2 {
-    font-size: 26px;
-    font-weight: bold  ;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-}
-.column:hover{
-cursor: pointer;
+.full-width-gif {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Hover Effect */
-.blur-effect-container .blur-effect-card {
-    transition: transform 0.4s, filter 0.4s, opacity 0.4s;
-    position: relative;
+.headline {
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
 }
 
-.blur-effect-container .blur-effect-card:hover {
-    transform: scale(1.1);
-    z-index: 10;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .column {
-        width: 90%; /* Full width on mobile */
-        height: 250px; /* Reduce height for better mobile fit */
-    }
-
-    .column h2 {
-        font-size: 18px; /* Smaller text for mobile */
-    }
-}
-    </style>
+  </style>
 </head>
 <body>
 
-    <section class="full-width-section">
-        <div class="row blur-effect-container">
-            <div class="column blur-effect-card" onclick="window.location.href='https://alacritytec.com/product';" style="background-image: url('image copy 7.png');">
-                <h2>Marketing Analytics Software</h2>
-            </div>
-            
-            <div class="column blur-effect-card" onclick="window.location.href='https://alacritytec.com/analytics-services';" style="background-image: url('image copy 8.png');">
-                <h2>Marketing Analytics Services</h2>
-            </div>
-            
-            <div class="column blur-effect-card" onclick="window.location.href='https://alacritytec.com/data-cloud-services';" style="background-image: url('image copy 9.png');">
-                <h2>Cloud Data Services</h2>
-            </div>
-
-        </div>
-    </section>
+  <section class="full-width-section">
+    <div class="gif-container">
+      <img src="Untitled design.gif" alt="Digital Marketing" class="full-width-gif">
+    </div>
+    <h1 class="headline">Digital Marketing Analytics Software</h1>
+  </section>
 
 </body>
 </html>
